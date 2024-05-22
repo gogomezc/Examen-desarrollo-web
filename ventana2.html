@@ -4,63 +4,80 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>VerdeVivo</title>
+    <link rel="stylesheet" href="Stilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      body.claro{
+        background-color: white;
+        color: black;
+      }
+      body.oscuro{
+        background-color: black;
+        color: white;
+      }
+    </style>
   </head>
   <body>
- <!-- inicio de barra navegacion-->
- <nav class="navbar bg-body-tertiary">
-  <div class="container-fluid" style="justify-content: center;">
-      <a class="navbar-brand" style="color: black;">VerdeVivo🌿</a>
-      <a class="btn btn-success" href="inicio.html" style="margin: 5px; color: white; background-color: #81C784;" role="button">inicio</a>
-       <a class="btn btn-success" href="Ventana3.html" style="margin: 5px; color: white; background-color: #81C784;" role="button">Plantas</a>
-       <a class="btn btn-success" href="ventana2.html" role="button" style="margin:5px; color: white; background-color: #81C784;" >Nosotros</a>
-
-      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style="background-color: #fff; border:none;  margin-left: auto;">
-        <img src="img/carrito-de-compras (1).png" alt="" style="height: 35px; width: 35px;">
-      </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-          <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasRightLabel">Tus compras</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <!-- Aquí puedes agregar el contenido del carrito -->
-          
-      </div>
-  </div>
+  <!-- inicio de barra navegacion-->
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid" style="justify-content: center;">
+        <a class="navbar-brand" style="color: black;">VerdeVivo🌿</a>
+        <a class="btn btn-success" href="inicio.html" style="margin: 5px; color: white; background-color: #81C784;" role="button">inicio</a>
+         <a class="btn btn-success" href="Ventana3.html" style="margin: 5px; color: white; background-color: #81C784;" role="button">Plantas</a>
+         <a class="btn btn-success" href="ventana2.html" role="button" style="margin:5px; color: white; background-color: #81C784;" >Nosotros</a>
+                     <button id="cambiar-modo" class="btn btn-success" style="margin:5px; color: white; background-color: #81C784;">Cambiar tema</button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style="background-color: #fff; border:none;  margin-left: auto;">
+          <img src="img/carrito-de-compras (1).png" alt="" style="height: 35px; width: 35px;">
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Tus compras</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <!-- Aquí puedes agregar el contenido del carrito -->
+        </div>
+    </div>
 </nav>
-    <!-- aqui acaba el navbar-->
 
-        <!-- aqui incia  el navbar secundario-->
-        <div class="container-fluid" style="margin-top: 20px; margin-bottom:20px; text-align: center;">
-            
-            <h1>Sobre nosotros</h1>
+<!-- aqui acaba el navbar-->
 
-            <ul>
-                <p class="fs-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia porro nulla qui. Exercitationem nostrum veritatis provident, ratione quisquam eaque impedit doloribus quae? Earum sapiente temporibus consectetur quam libero dicta nesciunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita culpa explicabo ullam laudantium pariatur, dolor in sit soluta dolorem! Molestiae facere alias adipisci tempore voluptas. Itaque aliquid laborum reprehenderit delectus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur possimus architecto sapiente explicabo optio tempore nihil exercitationem ullam laudantium iste commodi quod sunt, expedita illum cum hic facilis sequi itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi optio, voluptate impedit perferendis incidunt illum obcaecati ipsa voluptatibus eveniet nesciunt at, earum, quae assumenda dignissimos modi odit tenetur magnam. Ab. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, laudantium ullam? Ad eos, laboriosam labore iusto cupiditate ducimus soluta fugit voluptas! Vero iste tenetur assumenda, rerum maiores cupiditate labore quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nesciunt vero impedit veniam, corporis eveniet, quaerat accusantium eius amet molestiae dolor laborum harum ipsa, quae id rerum provident repudiandae excepturi?
-                </p>
-                <h1>Como contactarnos</h1>
-                <p><h3><a href="maceteros_epicos@fmail.com" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Correo ✉️</a></h3></p>
-                <p><h3><a href="tel:+56959137943" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Telefono 📱</a></h3></p>
-                <p><h3><a href="https://www.instagram.com/" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Redes sociales 📷</a></h3></p>
+<!-- aqui incia el navbar secundario-->
 
-                
+<div class="Cabecera">
+  <h1>Sobre nosotros</h1>
+  <p>VerdeVivo🌿 Es una pequeña empresa familiar especializada en la venta de maceteros y plantas de una amplia variedad</p>
+</div>
 
+<div class="contenedor">
+  <section class="sobre">
+    <div class="sobre-imagen">
+      <img src="img/Plantas-sobre.jpg" alt="">
+    </div>
+    <div class="sobre-contenido">
+      <h2>Aca nos preocupamos sobre tus plantas</h2>
+      <p>
+        En VerdeVivo🌿, ofrecemos una selección de plantas y maceteros de alta calidad para embellecer cualquier espacio. Nuestro objetivo es ayudarte a crear un ambiente verde y acogedor con productos cuidadosamente seleccionados y asesoramiento experto. ¡Transforma tu hogar con nuestras plantas hoy mismo!</p>
+    </div>
+  </section>
+</div>
 
+<!-- aqui acaba el navbar secundario-->
 
-            </ul>
-        
-           </div>
-           <div>
-            <!-- Button trigger modal -->
+<footer>
+  <div>
+    <a href="https://www.facebook.com/"><img class="icon" src="img/facebook.png" onmouseover="this.src='img/facebook-hover.png';" onmouseout="this.src='img/facebook.png';" alt=""></a>
+    <a href="https://twitter.com/?lang=es"><img class="icon" src="img/twitter.png" onmouseover="this.src='img/twitter-hover.png';" onmouseout="this.src='img/twitter.png';" alt=""></a>
+    <a href="https://www.instagram.com/"><img class="icon" src="img/instagram.png" onmouseover="this.src='img/instagram-hover.png';" onmouseout="this.src='img/instagram.png';" alt=""></a>
+    <p>Nuestras Redes Sociales</p>
+  </div>
+</footer>
 
-            
-           </div>
-            <!-- aqui acaba  el navbar secundario-->
-
-
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+  document.getElementById('cambiar-modo').addEventListener('click', function() {
+    document.body.classList.toggle('oscuro');
+    document.body.classList.toggle('claro');
+  });
+</script>
+</body>
 </html>

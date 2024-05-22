@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -10,22 +9,34 @@
   <body>
     <div class="container-fluid" style="margin-top: 20px;">
       <div class="row justify-content-center">
-    <div class="card text-center" style="max-width: 18rem;">
-      <div class="card-header" style="text-align: center; background-color: white;"><h2 style="color: black;">login</h2></div>
-      <div class="card-body ">
-        <form action="" class="col-12 col-md-12">
-          <label for="emailUsuario">Correo</label>
-          <input type="email" class="form-control" id="emailUsuario" name="emailUsuario" placeholder="Ingrese su correo electrónico">
- 
-          <label for="edadUsuario">contraseña</label>
-          <input type="password" class="form-control" id="edadUsuario" name="edadUsuario" placeholder="Ingrese su contraseña">
-          <a href="">forgot password?</a>
-          <button type="submit" class="btn btn-primary" style="width: 90%; margin-top: 5px;" >Login</button>
-    
-      </form>
+        <div class="card text-center" style="max-width: 18rem;">
+          <div class="card-header" style="text-align: center; background-color: white;">
+            <h2 style="color: black;">login</h2>
+          </div>
+          <div class="card-body">
+            <form id="loginForm" class="col-12 col-md-12">
+              <label for="emailUsuario">Correo</label>
+              <input type="email" class="form-control" id="emailUsuario" name="emailUsuario" placeholder="Ingrese su correo electrónico" required>
+              <label for="edadUsuario">Contraseña</label>
+              <input type="password" class="form-control" id="edadUsuario" name="edadUsuario" placeholder="Ingrese su contraseña" required>
+              <a href="">Forgot password?</a>
+              <button type="submit" class="btn btn-primary" style="width: 90%; margin-top: 5px;">Login</button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        // Aquí puedes agregar lógica de validación adicional o autenticación
+
+        // Simulamos una autenticación exitosa redirigiendo a inicio.html
+        window.location.href = 'inicio.html';
+      });
+    </script>
   </body>
 </html>
